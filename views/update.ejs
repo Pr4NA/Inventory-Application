@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Update Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form method="POST" action="/update">
+        <input type="hidden" name="Name" value="<%= pokemon.name %>">
+        <label for="PokLevel">Level of the Pokemon</label>
+        <input type="number" name="Level" id="PokLevel" value="<%= pokemon.level %>">
+        <label for="PokTrainer">Trainer of the Pokemon</label>
+        <input type="text" name="Trainer" id="PokTrainer" value="<%= pokemon.trainer_name %>">
+        <button type="submit">Update the Pokemon</button>
+     </form>    
+  </body>
+</html>
